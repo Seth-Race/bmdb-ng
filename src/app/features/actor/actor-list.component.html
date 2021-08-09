@@ -1,0 +1,21 @@
+<h1>List of Actors</h1>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Birthdate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let actor of actors'>
+            <td>{{actor.id}}</td>
+            <td>{{actor.firstName}}</td>
+            <td>{{actor.lastName}}</td>
+            <td>{{actor.gender}}</td>
+            <td>{{actor.birthdate}}</td>
+        </tr>
+    </tbody>
+</table>
