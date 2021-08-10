@@ -12,7 +12,7 @@ export class MovieCreateComponent implements OnInit {
 
   title: string = "Movie-Create";
   movie: Movie = new Movie();
-  subtmitBtnTitle: string = 'Create';
+  submitBtnTitle: string = 'Create';
 
   constructor(  
     private movieSvc:MovieService,
@@ -24,7 +24,8 @@ export class MovieCreateComponent implements OnInit {
 
   save(){
     this.movieSvc.create(this.movie).subscribe(
-      resp => { this.movie = resp as Movie; this.router.navigateByUrl("/movie-list");},
+      resp => { this.movie = resp as Movie; 
+                this.router.navigateByUrl("/movie-list");},
       err => { console.log(err)}
     );
     }
