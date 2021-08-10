@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MovieListComponent } from './features/movie/movie-list.component';
+import { MovieListComponent } from './features/movie/movie-list/movie-list.component';
 import { ActorListComponent } from './features/actor/actor-list.component';
 import { CreditListComponent } from './features/credit/credit-list.component';
 import { MenuComponent } from './core/menu/menu.component';
