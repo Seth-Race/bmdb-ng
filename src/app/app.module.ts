@@ -16,6 +16,8 @@ import { ActorDetailComponent } from './features/actor/actor-detail/actor-detail
 import { ActorCreateComponent } from './features/actor/actor-create/actor-create.component';
 import { ActorEditComponent } from './features/actor/actor-edit/actor-edit.component';
 import { MovieDetailComponent } from './features/movie/movie-detail/movie-detail.component';
+import { UserListComponent } from './features/user/user-list/user-list.component';
+import { UserLoginComponent } from './features/user/user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MovieDetailComponent } from './features/movie/movie-detail/movie-detail
     MovieDetailComponent,
     ActorDetailComponent,
     ActorCreateComponent,
-    ActorEditComponent
+    ActorEditComponent,
+    UserListComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
